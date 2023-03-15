@@ -30,7 +30,7 @@ public class LoginApplication extends UIInteractions implements WithAssertions {
     }
     @Then("Login should be success")
     public void login_should_be_success() {
-        assertThat(products.title.getText()).isEqualTo("PRODUCTS");
+        assertThat(products.title.getText()).isEqualTo("Products");
     }
     @Then("Login should fail")
     public void login_should_fail() {

@@ -36,4 +36,17 @@ public class LoginApplication extends UIInteractions implements WithAssertions {
     public void login_should_fail() {
         assertThat(login.messageError.getText()).isEqualTo("Epic sadface: Username and password do not match any user in this service");
     }
+
+    @Given("Joe is a new customer")
+    public void joe_is_a_new_customer() {
+    }
+    @Given("Joe is considered a low risk customer")
+    public void joe_is_considered_a_low_risk_customer() {
+    }
+    @When("he is onboarded")
+    public void he_is_onboarded() {
+    }
+    @Then("his account should be scheduled for review in {int} months time")
+    public void his_account_should_be_scheduled_for_review_in_months_time(Integer int1) {
+    }
 }

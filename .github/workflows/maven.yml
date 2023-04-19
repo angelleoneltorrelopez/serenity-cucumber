@@ -39,4 +39,7 @@ jobs:
       run: mvn --version
 
     - name: Clean install
+      run: mvn clean install -T4 -DskipTests
+
+    - name: run tests
       run: mvn clean verify
